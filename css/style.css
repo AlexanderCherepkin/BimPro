@@ -1,0 +1,2744 @@
+body {  
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #EFEFEF;
+    background-color: #222224;
+    font-style: normal;
+    font-display: swap;
+    letter-spacing: normal;
+    line-height: normal;
+    z-index: 1;
+}
+
+a:focus {
+    outline: none;
+}
+
+.head {
+    max-width: 1368px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.head-block {
+    width: 144px;
+    height: 27px;    
+    margin: 8px 0 0 0;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+    height: 47px;    
+}
+
+ul a, .head-block {
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li, .head-block {
+    list-style: none;
+}
+
+.head-first::first-line {
+    color: #fd9974; 
+}
+
+.head-first:hover::first-line {
+    color: #EA4C14;
+    transition: all 1.9s ease-in-out; 
+}
+
+.head-block:hover,
+.head-block:focus {
+    color: #EA4C14;
+    transition: all 0.4s ease-in-out; 
+}
+
+.head-block:nth-child(1):hover::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    margin-left: -100px;
+    transform: translate(15px, 15px);
+    border: 1px solid #EA4C14;
+}
+
+.systems:hover::after {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    left:-40px;
+    border: 1px solid #EA4C14;
+}
+
+.systems-project:hover::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -10px;
+    border: 1px solid #EA4C14;
+}
+
+.head-block:nth-child(4):hover::after {
+    content: "";
+    display: inline-block;
+    width: 95px;
+    margin-left: -95px;
+    transform: translate(5px, 15px);
+    border: 1px solid #EA4C14;
+}
+
+.head-block:nth-child(5):hover::after {
+    content: "";
+    display: inline-block;
+    width: 95px;
+    margin-left: -95px;
+    transform: translate(5px, 15px);
+    border: 1px solid #EA4C14;
+}
+
+.head-block:nth-child(6):hover::after {
+    content: "";
+    display: inline-block;
+    /* transition: all 1.8s ease-in-out; */
+    width: 90px;
+    margin-left: -110px;
+    position: relative;
+    left: -20px;
+    border: 1px solid #EA4C14;
+}
+
+.head-block__phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 164px;
+    margin-left: 135px;
+} 
+
+.free-consultation__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;    
+    left: 1395px;
+    top: -16px;
+    width: 250px;
+    height: 40px;
+    transition: all 0.9s ease-in-out;
+    background: #EA4C14;
+    border-radius: 0px 0px 6px 6px;
+    line-height: 27px;
+    letter-spacing: 0.01em;    
+    color: #FFFFFF;    
+}
+
+a.link:link {
+    color: #FFFFFF;
+    transition: all 0.9s ease-in-out;
+}
+
+a.link:hover {
+    transition: all 0.9s ease-in-out;
+    color: #851db2;
+}
+
+.free-consultation__block .link:visited {
+    color: #fff;
+    transition: all 0.9s ease-in-out;
+}
+
+@media (max-width: 1899px) {
+    .free-consultation__block {
+        position: relative;
+            left: 1190px;
+            top: -16px;
+    }
+}
+
+/* Блок с рекламой визуализации */
+
+.visual {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1368px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.visual-descript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 18px 74px 0 0;
+    /* padding: 20px 0 0 0; */
+    gap: 25px;
+}
+
+.visual-descript__text {
+    width: 359px;
+    height: 204px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 68px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.visual-descript__title {
+    line-height: 27px;    
+    letter-spacing: 0.02em;
+}
+
+.visual-descript__btn {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #EA4C14;
+    border-radius: 6px;
+}
+
+a,.visual-descript__btn:focus {    
+    color: #fff;
+    transition: all 1.2s ease-in-out;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.visual-descript__btn:hover {
+    color: #8f018f;
+    transition: all 0.9s ease-in-out;
+    font-size: 25px;
+}
+
+.visual-img {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.visual-img a {
+    outline: none;
+}
+
+.visual-img__size {
+    width: 980px;
+    height: 495px;
+    border-radius: 2%;
+    border-top-left-radius: 3.5%;
+    border-bottom-left-radius: 3.5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding: 0 20px 0 0;
+}
+
+.owl-dots {
+    margin-left: 27%;
+}
+
+@media (max-width: 1899px) {
+    .owl-dots {
+        margin-left: 20%;
+    }
+}
+
+.owl-dot {    
+    margin: 25px 1px;    
+    width: 102px;
+    height: 5px;
+    color: #fff;  
+    border-radius: 5px;
+    border: 1px solid rgba(255, 91, 91, 0.7)!important; 
+    transition: all 0.4s ease-in-out;
+}
+
+.owl-dot:hover,
+.owl-dot.active {    
+    background: red!important;
+    transition: all 0.9s ease-in-out;
+}
+
+.owl-dots::before,
+.owl-dots::after,
+.active {
+    transform: translateY(7px);
+}
+
+.centered-left {
+    position: absolute;
+    top: 45%;
+    left: -50px;
+    max-width: 100%;
+    max-height: 100%;
+    border-bottom: 2px solid #000;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
+    transition: all 0.5s ease-in-out;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.visual-img__centered-block-one {
+    margin-left: 35px;
+}
+
+.visual-img__centered-block-two {
+    margin-left: 45px;
+    margin-top: 0 auto;
+}
+
+.visual-img__centered-block-free {
+    margin-left: -30px;
+}
+
+.visual-img__centered-block-four {
+    margin-left: 5px;
+}
+
+.visual-img__centered-block-five {
+    margin-left: -50px;
+}
+
+.centered-left:hover {
+    color: rgb(255, 255, 255);   
+    font-size: 35px;
+    transition: all 0.9s ease-in-out;
+}
+
+/* Блок с услугами */
+
+.section-block {
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+.section-text {
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 80px;
+}
+
+.service {
+    display: flex;
+    max-width: 1368px;
+    height: 388px;
+    margin-bottom: 164px;
+}
+
+.service-block {
+    width: 436;
+    height: 388px;
+    padding: 0 20px 20px 0;
+}
+
+.service-block__descript {
+    display: flex;
+    padding: 51px 10px 58px 50.52px;
+    background: #191919;
+    border: 2px solid #464646;
+    border-radius: 8px;
+    margin-bottom: 26px;
+}
+
+.service-svg {
+    width: 105px;    
+}
+
+.dop {
+    margin-bottom: -3px;
+}
+.service-block__descript-text {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 20px;
+    width: 271px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+}
+
+.discount {
+    display: flex;
+    justify-content: flex-start;   
+    
+}
+
+.discount-block { 
+    width: 512px;
+    height: 60px;    
+    font-family: 'Bebas Neue';    
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;    
+    text-align: center;
+    letter-spacing: 0.01em;
+    padding: 0 0 19px 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.discount-block__color { 
+    text-align: center;
+    color: #EA4C14;    
+}
+
+.strech-border {
+    width: 1366px;
+    height: 0px;    
+    border: 1px solid #9B9B9B;
+    margin-bottom: 160px; 
+}
+
+.discont-hr {
+    width: 121px;
+    height: 0px;
+    border: 1px solid #515151;    
+    transform: translate(-27px, 60px) rotate(90deg);
+}
+
+.discont-hr__center {
+    width: 121px;
+    height: 0px;
+    border: 1px solid #515151;    
+    transform: translate(2px, 60px) rotate(90deg);
+}
+
+.discont-hr__center-hr {
+    width: 24.04px;
+    height: 0px;
+    border: 1px solid #515151;
+    transform: translateX(43px) rotate(135deg);
+}
+.discont-hr__right {
+    width: 121px;
+    height: 0px;
+    border: 1px solid #515151;    
+    transform: translate(25px, 60px) rotate(90deg);
+}
+
+/* Блок main визуализация с описанием и фото */
+
+.house {
+    background-color: #171719;
+}
+
+.house-visualing {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1368px;
+    
+    margin: 0 auto;
+}
+
+.house-visualing__descript {
+    width: 548px;
+    height: 511px;
+    padding-top: 65px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.svg-site {
+    margin-left: -10px;
+}
+
+.house-visualing__descript-title {
+    min-width: 365px;
+    height: 115px;
+    padding: 165px 116px 0 15px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #A5A5A5;
+}
+
+.house-visualing__descript-sale {
+    width: 547px;
+    height: 232px;
+}
+
+.house-visualing__descript-sale-block {
+    display: flex;
+    margin: 0 36px 82px 18px;
+}
+
+.site-complex {
+    widows: 1062px;
+    height: 726px;
+}
+
+.house-visualing__section-title {
+    width: 547px;
+    height: 232px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 58px;    
+    letter-spacing: 0.01em;    
+    color: #FFFFFF;
+}
+
+/* Блок our-help визуализация с описанием*/
+
+.our-help {
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+.our-help__general {
+    display: flex;
+    justify-content: space-between;   
+    padding: 150px 48px 83px 0;    
+}
+
+.our-help__general-text,h3{
+    width: 534px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 65px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+}
+
+.general-text {
+    color: #EA4C14;
+}
+
+.strech-help {
+    width: 534px;
+    height: 0;
+    opacity: 0.2;
+}
+
+p, span, .general-title {
+    padding-bottom: 26px;
+    color: #EA4C14;
+}
+
+.title {
+    width: 1002px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #EFEFEF;
+    letter-spacing: 0.02em;
+}
+
+/* =============================================================================== */
+
+.dropbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropbtn:hover,
+.dropbtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+/* =============================================================================== */
+
+/* =============================================================================== */
+
+.dropbtns {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropbtns:hover,
+.dropbtns:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdowns {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-contents {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-contents a:hover {
+    background-color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.shows{
+    display: block;
+}
+
+/* =============================================================================== */
+
+/* =============================================================================== */
+
+.droptownbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.droptownbtn:hover,
+.droptownbtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.droptown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.droptown-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.droptown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.droptown-content a:hover {
+    background-color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+/* =============================================================================== */
+
+/* =============================================================================== */
+
+.droppownbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.droppownbtn:hover,
+.droppownbtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.droppown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.droppown-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.droppown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.droppown-content a:hover 
+.droppown-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+/* =============================================================================== */
+
+.dropdown-content {
+    color: #EA4C14;
+}
+.titles {
+    font-size: 18px;
+    color: #EA4C14;
+}
+.dropdown, .titles, .title a:focus {
+    color: #EA4C14;
+}
+.strech-borders {
+    margin-bottom: 40px;
+}
+
+.perspect-left {
+    margin-left: 30px;
+}
+
+.strech-helps {
+    width: 634px;
+    margin-left: 25px;
+    margin-top: 20px;
+    height: 0;
+    opacity: 0.2;
+}
+
+.our-help__general-title {
+    width: 784px;
+    height: 485px;
+    margin-left: 48px;
+}
+
+.our-help {
+    max-width: 100%;
+    background-color: #2E2E31;
+}
+
+.our-help__general {
+    max-width: 1368px;
+    margin: 0 auto;
+}
+.our-help__general-title, p {
+    padding-left: 96px;
+    font-family: 'Rubik';        
+    font-size: 22px;
+    line-height: 27px;    
+    letter-spacing: 0.01em;
+}
+
+.perspect {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #EFEFEF;
+    letter-spacing: 0.01em;
+    margin-top: -100px;
+}
+
+.westeps {
+    margin: 103px 0 111px 0;
+}
+
+.westeps-block {
+    max-width: 1368px;
+    margin: 0 auto;
+
+}
+
+.westeps-block__five {
+    padding-bottom: 82px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;  
+    text-transform: uppercase;  
+    letter-spacing: 0.01em;
+}
+
+.five-steps {
+    color: #EA4C14;
+}
+
+.five-strech {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;    
+    letter-spacing: 0.01em;
+}
+
+.westeps-block__number {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 79px;
+}
+
+.strech {
+    padding: 0 51px 0 51px;
+    font-size: 86px;
+}
+
+.steps-title {
+    max-width: 363px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    margin-left: -220px;
+    text-align: center;
+}
+
+.no-color {
+    color: rgba(239, 239, 239, 1);
+    text-align: center;
+}
+
+.westeps-block__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 70px;
+    border: 2px solid #F5F5F5;        
+    border-radius: 6px;
+    color: #FFFFFF;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+}
+
+.westeps-block__btn:hover {
+    transition: all 0.9s ease-in-out;
+    background-color: rgb(145, 145, 145);
+    color: #EA4C14;
+    font-size: 20px;
+    font-weight: 900;
+    width: 325px;
+    margin: 0 0 15px 15px;
+}
+
+.visual-devolerop {
+    display: flex;
+    max-width: 100%;
+    background-color: #2E2E31;   
+}
+
+.visual-devolerop__img {       
+    width: 859px;
+    height: 1104px; 
+}
+
+.visual-devolerop__img {
+    position: relative;
+    z-index: 0;
+}
+
+@media (max-width: 1800px) {
+    .visual-devolerop__img {
+            width: 50%;
+            height: 1104px;
+            margin-bottom: -8.5%;
+        }
+    .visual-devolerop__text {
+        min-width: 1%;
+        height: 40%;
+        margin-bottom: -8%;
+    }
+    .application-adaptativ {
+        display: none;
+    }
+}
+
+.visual-devolerop__text {
+    padding: 82px 0 0 99px;
+}
+
+.visual-devolerop__text-header {
+    max-width: 454px;
+    height: 100px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    color: #EFEFEF;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+}
+
+.visual-devolerop__text-title {
+    position: relative;
+    width: 647px;
+    height: 36px;
+    left: -90px;
+    top: 100px;
+    color:rgba(239, 239, 239, 1);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.visual-helps {
+    margin-left: -8px;
+}
+
+.visual-devolerop__text-btn {
+    position: relative;
+    left: 0;
+    top: 560px;
+    transition: all 0.9s ease-out;
+}
+
+.black {
+    background: rgba(34, 34, 36, 1);
+}
+
+.devolerop-text {
+    width: 563px;
+    height: 61px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #A5A5A5;
+    text-transform: none;
+    margin-left: -95px;
+}
+
+.animate-big {
+    position: absolute;
+    left: 280px;
+    /* top: 250px; */
+    margin-top: 450px;
+
+}
+
+.visual-three {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    top: 770px;
+    transition: all 0.9s ease-out;
+}
+
+.visual-devolerop__text-btn.westeps-block__btn:hover {
+    transition: all 0.9s ease-in-out;
+    background-color: rgb(145, 145, 145);
+    color: #EA4C14;
+    font-size: 20px;
+    font-weight: 900;
+    width: 325px;
+    margin: 0 0 -15px 15px;
+}
+
+.svg-visual{
+    padding-right: 21px;
+    display: inline-block;
+    vertical-align: center;
+}
+
+.owl-dots {
+    opacity: 0;
+}
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+.dropvisualbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropvisualbtn:hover,
+.dropvisualbtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropvisual {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropvisual-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropvisual-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropvisual-content a:hover .dropvisual-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+/* ========================================================================================== */
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+
+.dropvisuatwolbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropvisualtwobtn:hover,
+.dropvisualtwobtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropvisualtwo {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropvisualtwo-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropvisualtwo-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropvisualtwo-content a:hover .dropvisualtwo-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+.titles-bottom {
+    margin-bottom: 100px;
+}
+
+/* ========================================================================================== */
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+
+.droparchitecturebtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.droparchitecturebtn:hover,
+.droparchitecturebtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.droparchitecture {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.droparchitecture-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.droparchitecture-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.droparchitecture-content a:hover .droparchitecture-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+.titles-bottom {
+    margin-bottom: 100px;
+}
+
+/* ========================================================================================== */
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+
+.droparchitecturetwobtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.droparchitecturetwobtn:hover,
+.droparchitecturetwobtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.droparchitecturetwo {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.droparchitecturetwo-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.droparchitecturetwo-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.droparchitecturetwo-content a:hover .droparchitecturetwo-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+.titles-bottom {
+    margin-bottom: 100px;
+}
+
+.intervier-btn {
+    margin-top: 50px;
+}
+
+/* ========================================================================================== */
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+
+.intervierbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.intervierbtn:hover,
+.intervierbtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.intervier {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.intervier-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.intervier-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.intervier-content a:hover .intervier-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+.titles-bottom {
+    margin-bottom: 100px;
+}
+
+.intervier-btn {
+    margin-top: 50px;
+}
+
+/* ========================================================================================== */
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+
+.interviertwobtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.interviertwobtn:hover,
+.interviertwobtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.interviertwo {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.interviertwo-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.interviertwo-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.droparchitecturetwo-content a:hover .droparchitecturetwo-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+/* .titles-bottom {
+    margin-bottom: 100px;
+} */
+
+.intervier-btn {
+    position: relative;
+    top: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 70px;
+    border: 2px solid #F5F5F5;
+    border-radius: 6px;
+    color: #FFFFFF;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+}
+
+.intervier-btn:hover {    
+    transition: all 0.9s ease-in-out;
+    background-color: rgb(145, 145, 145);
+    color: #EA4C14;
+    font-size: 20px;
+    font-weight: 900;
+    width: 325px;
+}
+
+/* ========================================================================================== */
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+
+.advertisingbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.advertisingbtn:hover,
+.advertisingbtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.advertising {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.advertising-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.advertising-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.droparchitecturetwo-content a:hover .droparchitecturetwo-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+.titles-bottom {
+    margin-bottom: 100px;
+}
+
+/* ================================================================================== */
+
+.perspect-lefts {
+    color: #fff;
+    margin-left: 28px;
+}
+
+
+/* ========================================================================================== */
+.drop {
+    margin: -130px 0 0 30px;
+    cursor: pointer;
+}
+
+.virtualbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.virtualbtn:hover,
+.virtualbtn:focus {
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.virtual {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.virtual-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.virtual-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.virtual-content a:hover .virtual-content a:focus {
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+.titles-bottom {
+    margin-bottom: 100px;
+}
+
+/* ================================================================================== */
+
+.to-realize {
+    background-color: #2E2E31;;
+    max-width: 100%;
+} 
+
+.to-realize__block {
+    max-width: 1367px;
+    margin: 0 auto;
+    background-color: #2E2E31;
+    padding: 100px 0 20px 0;
+}
+
+.to-realize__block--width {
+    width: 664px;
+    height: 50px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;    
+    color: #EFEFEF;
+    padding: 0 0 65px 0;
+}
+
+.realize {
+    max-width: 1367px;
+    padding: 65px 0 26px 0;
+    margin: 0 auto;
+}
+
+.realize--heshtag {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 17px 0px;
+    
+}
+
+.realize--heshtag__block {
+    max-width: 364px;
+    height: 44px;
+    border: 1px #fff solid;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px 36px;
+}
+
+.realize--heshtag__block--fix-filter {
+    position: relative;
+    top: 10px;
+    left: 140px;
+    width: 152px;
+    height: 27px;
+    line-height: 27px;    
+    letter-spacing: 0.02em;    
+    color: #E74214;
+}
+
+.img-realize {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1367px;
+    max-height: 1631px;    
+    margin: 0 auto;
+}
+
+.img-realize__block-sector {
+    position: relative;
+    top: -330px;
+    height: 730px;
+}
+
+.img-position {
+    position: relative;
+    top: -300px;
+    margin-bottom: -260px;
+}
+
+.btn-realize {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    max-width: 436px;
+    margin: 0 auto;
+    height: 64px;
+    border: 1px #fff solid;
+    border-radius: 6px;
+}
+
+.btn-realize:hover {
+    max-width: 536px;
+    background-color: rgb(145, 145, 145);
+    color:#E74214;
+    font-size: 22px;
+    transition: 1s;
+}
+
+.realize-to {
+    max-width: 1354px;
+}
+
+.to-realize__block--foot {
+    width: 1064px;
+    height: 50px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    color: #EFEFEF;
+    padding: 22px 0 65px 0;     
+}
+
+
+
+.text-realize {
+    width: 1364px;
+}
+
+.reliaze-text {
+    width: 1064px;   
+}
+
+.block-text {    
+    line-height: 27px;
+    letter-spacing: 0.02em;   
+    color: #EFEFEF;
+}
+
+.shirt {
+    position: relative;
+    top: -210px;
+    left: 1150px;
+    margin-bottom: -226px;
+}
+
+.vertical-shirt::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -115px;
+    left: 1000px;
+    width: 160px;
+    transform: rotate(-90deg);
+    height: 2px;
+    background-color: #E74214;
+}
+
+.world-head__img {
+    width: 208px;
+    height: 210px    
+}
+
+.img-director {
+    text-align: center;
+    border-radius: 100%;
+}
+
+.director {
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;    
+    letter-spacing: -0.01em;
+    color: #EFEFEF;
+    text-transform: uppercase;
+}
+
+.on {
+    margin-top: 20px;
+}
+
+.comands {
+    max-width: 1367px;
+    margin: 0 auto;
+    padding: 117px 0 35px 0;
+}
+
+.comands-title {
+    width: 978px;
+    height: 70px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    color: #EFEFEF;
+    padding: 0 0 20px 0;
+
+}
+
+.comands-title__color {
+    text-transform: uppercase;
+}
+
+.comands-text {
+    position: relative;
+    top: 30px;
+    left: -95px;
+    margin-bottom: 100px;
+    width: 1000px;
+    font-size: 20px;
+    line-height: 27px;    
+    letter-spacing: 0.01em;
+    color: #EFEFEF;
+    width: 1098px;
+    height: 50px;
+}
+
+.comands-block {
+    margin-top: 163px;
+}
+
+.comands-block__img {
+    display: flex;
+    justify-content: space-between;  
+    padding: 0 0 80px 0;
+}
+
+.comands-block__img-emloyeer {
+    width: 283px;
+    height: 394px;
+}
+
+.comands-block__img-block-prezents {
+    width: 319px;
+    height: 94px;
+    background-color: #2E2E31;
+    padding: 0 0 25px 0;
+}
+
+.comands-block__img-block-prezents::before {
+    content: "";
+    position: relative;
+    top: -13px;
+    display: inline-block;
+    width: 319px;
+    height: 2px;
+    background-color: #E74214;
+}
+
+.jana {
+    position: relative;
+    top: 10px;
+}
+
+.anjei {
+    position: relative;
+    top: -7px;
+}
+
+.comands-block__img-block-prezents-title {
+    width: 319px;
+    height: 27px;    
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    padding-left: 25px;
+    text-align: center;
+    letter-spacing: 0.01em;    
+    color: #E74214;
+    text-transform: none;
+}
+
+.comands-block__img-block-prezents-text {
+    margin-left: -110px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #EFEFEF;
+}
+
+.garant {
+    background-color: #2E2E31;  
+    margin-bottom: -160px;  
+}
+
+.garant-content {
+    max-width: 1367px;
+    margin: 0 auto;
+}
+
+.garant-content__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 126px 100px 94px 0;
+    height: 960px;
+}
+
+.garant-content__head-title {   
+    min-width: 550px;
+    text-transform: uppercase;
+}
+
+.garant-content__head-title-contract {
+    max-width: 650px;
+}
+.garant-content__head-title-contract-one {
+    
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    margin-left: 12px;
+    padding-bottom: 92px;
+}
+
+.garant-content__head-title-contract-one::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background-color: #E74214;
+    position: relative;
+    top: -5px;
+    left: -10px;
+    transform: rotate(335deg);
+}
+
+.garant-content__head-title-contract-one::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background-color: #E74214;
+    position: relative;
+    top: -25px;
+    left: -280px;
+    transform: rotate(30deg);
+}
+
+.garant-content__head-title-contract::after {
+    content: "";
+    display: inline-block;
+    width: 500px;
+    height: 1px;
+    background-color: #9B9B9B;
+    position: relative;
+    top: -50px;
+    opacity: 0.3;
+}
+
+.garant-content__head-title-contract-two {
+    max-width: 489px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    padding-bottom: 92px;
+}
+
+.garant-content__head-title-contract-three {
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    padding-bottom: 92px;
+}
+
+.garant-content__head-text {
+    min-width: 800px;
+    height: 543px;
+}
+
+.garant-content__head-text, ul li {
+    list-style: disc;
+}
+
+.garant-content__head-text-paragraf {
+    font-size: 18px;
+}
+
+.garantcontent-text {
+    max-width: 400px;
+    position: relative;
+    left: 60px;
+    font-size: 16px;
+}
+
+.garantcontent-content::after {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    height: 2px;
+    background-color: #EA4C14;
+    position: relative;
+    top: -60px;
+    left: -140px;
+    transform: rotate(90deg);
+}
+
+/* .garant-content__head-text-color {} */
+
+
+
+/* ========================================================================================== */
+.head-text__paragraf {
+    margin: -5px 0 30px 80px;
+    cursor: pointer;
+    transition: all 0.7 ease-in-out;
+}
+
+.garantcontentbtn {
+    background-color: #2E2E31;
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7 ease-in-out;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.garantcontentbtn:hover,
+.garantcontentbtn:focus {
+    transition: all 0.7s ease-in-out;
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.garantcontent {
+    position: relative;
+    display: inline-block;
+    transition: all 0.7 ease-in-out;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.garantcontent-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 560px;
+    transition: all 0.7 ease-in-out;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.garantcontent-content a {
+    color: black;
+    transition: all 1.7 ease-in-out;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.garantcontent-content a:hover .garantcontent-content a:focus {
+    transition: all 0.7 ease-in-out;
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+    transition: all 0.7 ease-in-out;
+}
+
+
+/* ================================================================================== */
+
+/* ========================================================================================== */
+.head-text__paragraf {
+    margin: -5px 0 30px 80px;
+    cursor: pointer;
+    transition: all 0.7 ease-in-out;
+}
+
+.garantcontentonebtn {
+    background-color: #2E2E31;
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7 ease-in-out;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.garantcontentonebtn:hover,
+.garantcontentonebtn:focus {
+    transition: all 0.7s ease-in-out;
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.garantcontentone {
+    position: relative;
+    display: inline-block;
+    transition: all 0.7 ease-in-out;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.garantcontentone-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 560px;
+    transition: all 0.7 ease-in-out;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.garantcontentone-content a {
+    color: black;
+    transition: all 1.7 ease-in-out;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.garantcontentone-content a:hover .garantcontentone-content a:focus {
+    transition: all 0.7 ease-in-out;
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+    transition: all 0.7 ease-in-out;
+}
+
+
+/* ================================================================================== */
+
+.trigle-btn {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff;
+    position: relative;
+    top: 105px;
+    left: -250px;
+    /* transform: translate(2px, 7px); */
+}
+
+.garantcontentone-text {
+    max-width: 480px;
+    position: relative;
+    left: 70px;
+    font-size: 16px;
+}
+
+.garantcontentone-content::after {
+    content: "";
+    display: inline-block;
+    width: 235px;
+    height: 2px;
+    background-color: #EA4C14;
+    position: relative;
+    top: -132px;
+    left: -60px;
+    transform: rotate(90deg);
+}
+
+/* ========================================================================================== */
+.head-text__paragraf {
+    margin: -5px 0 30px 80px;
+    cursor: pointer;
+    transition: all 0.7 ease-in-out;
+}
+
+.garantcontenttwobtn {
+    background-color: #2E2E31;
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7 ease-in-out;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.garantcontenttwobtn:hover,
+.garantcontenttwobtn:focus {
+    transition: all 0.7s ease-in-out;
+    color: #EA4C14;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.garantcontenttwo {
+    position: relative;
+    display: inline-block;
+    transition: all 0.7 ease-in-out;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.garantcontenttwo-content {
+    display: none;
+    position: relative;
+    color: #EA4C14;
+    min-width: 560px;
+    transition: all 0.7 ease-in-out;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.garantcontenttwo-content a {
+    color: black;
+    transition: all 1.7 ease-in-out;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.garantcontenttwo-content a:hover .garantcontenttwo-content a:focus {
+    transition: all 0.7 ease-in-out;
+    color: #EA4C14;
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+    transition: all 0.7 ease-in-out;
+}
+
+
+/* ================================================================================== */
+
+.garantcontenttwo-text {
+    max-width: 480px;
+    position: relative;
+    left: 70px;
+    font-size: 16px;
+}
+
+.garantcontenttwo-content::after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #EA4C14;
+    position: relative;
+    top: -25px;
+    left: -280px;
+    transform: rotate(90deg);
+}
+
+.garantcontent-strech {
+    position: relative;
+    top:-115px;
+    left: 580px;
+    width: 740px;
+}
+
+.garantcontent-strech::before {
+    content: "";
+    display: inline-block;
+    width: 750px;
+    height: 2px;
+    background-color: #9B9B9B;
+    transform: rotate(90deg);
+    position: relative;
+    top: -390px;
+    left: -375px;
+}
+
+.garant-menu {
+    position: relative;
+    top: -160px;
+    left: 0; 
+    padding-bottom: 25px;   
+}
+
+.garant-menu__title {
+    width: 300px;
+    height: 50px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    margin-bottom: 58px;
+    text-transform: uppercase;
+}
+
+.garant-menu__title-block-partners {
+    width: 1349px;
+    height: 400px;
+}
+
+.title-block__partners-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-block__partners-block-prezents {
+    width: 228px;
+    height: 200px;
+    border: 1px solid #454545;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.title-block__partners-block-prezent {
+    width: 228px;
+    height: 200px;
+    border: 1px solid #454545;
+    text-align: center;
+}
+
+.garant-content {
+    padding-bottom: 105px;
+}
+
+.garant-content__menu-block {
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+.garant-content__menu-about {
+    position: relative;
+    top: -58px 
+}
+
+.garant-content__menu-about-smi {
+    width: 300px;
+    height: 50px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.garant-content__menu-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1367px;
+    height: 295px;
+    margin-bottom: 214px;
+}
+
+.garant-content__menu-block input {
+    display: none;
+}
+
+.garant-content__menu-block-slider {
+    /* display: flex; */
+    width: 321px;
+    height: 295px;
+    border: 1px solid #454545;
+    text-align: center;  
+    margin: 0 30px 10px 0; 
+    transition: 2s;
+    /* overflow: hidden;  */
+}
+
+.garant-content__menu-block-slider:hover {
+    background-color:#EA4C14;
+    transition: 2s;
+}
+
+.garant-content__menu-block-slider:active {
+    opacity: 0.5;
+    transition: all 0.05s ease-in-out;
+
+    background-color: #5d1901;
+}
+.manual-btn {
+    border: 1px solid #EA4C14;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-left: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #EA4C14;
+}
+
+.manual-end {
+    margin-left: 40px;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -120%;
+}
+
+#radio8:checked ~ .first {
+    margin-left: -140%;
+}
+
+#radio9:checked ~ .first {
+    margin-left: -160%;
+}
+
+#radio10:checked ~ .first {
+    margin-left: -180%;
+}
+
+#radio11:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio12:checked ~ .first {
+    margin-left: -220%;
+}
+
+.navigation-manual {
+    position: absolute;
+    left: 500px;
+    width: 500px;
+    margin-top: 310px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto {
+    position: absolute;
+    left: 321.5px;
+    width: 1000px;
+    display: flex;    
+    justify-content: center;
+    margin-top: 309px;
+}
+
+@media (min-width: 1920px) {
+        .navigation-manual {
+            /* position: absolute; */
+            left: 750px;
+            width: 500px;
+            margin-top: 310px;
+            display: flex;
+            justify-content: center;
+    }
+        .navigation-auto {
+        /* position: absolute; */
+        left: 719px;
+        width: 500px;
+        display: flex;    
+        justify-content: center;
+        margin-top: 310px;
+
+    }
+}
+
+.navigation-auto div {
+    border: 1px solid #EA4C14;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #EA4C14;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #EA4C14;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #EA4C14;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #EA4C14;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: #EA4C14;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: #EA4C14;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7 {
+    background-color: #EA4C14;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+    background-color: #EA4C14;
+}
+
+#radio9:checked ~ .navigation-auto .auto-btn9 {
+    background-color: #EA4C14;
+}
+
+#radio10:checked ~ .navigation-auto .auto-btn10 {
+    background-color: #EA4C14;
+}
+
+#radio11:checked ~ .navigation-auto .auto-btn11 {
+    background-color: #EA4C14;
+}
+
+#radio12:checked ~ .navigation-auto .auto-btn12 {
+    background-color: #EA4C14;
+}
+
+.shrifts {
+    width: 265px;
+    height: 31px;
+    font-weight: 900;
+    font-size: 31px;
+    margin: 42px 0 42px 0;
+    text-transform: none;
+    /* background: linear-gradient(0deg, #222224, #222224); */
+}
+
+.garant-text {
+    width: 223px;
+    height: 54px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    /* margin: 0 0 85px 0; */
+}
+
+.garant-title {
+    padding: 65px 123px 34px 0;
+    margin-left: -20px;
+    width: 192px;
+    height: 27px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    
+}
+
+.garant-title__color {
+    color: #FFFFFF;
+}
+
+.slider-width {
+    min-width: 267px;
+    height: 295px;
+}
+
+.svg-site__partners {    
+    margin: 42px 0 15px 0;
+    text-transform: none;    
+}
+
+.garant-foot {    
+    max-width: 1368px;
+    margin: 0 auto;
+    position: relative;
+    top: -270px;
+}
+
+.garant-foot__block {
+    width: 136px;
+    height: 68px;
+    margin: 0 0 139px 0;
+
+}
+
+.garant-foot__block-title {    
+    text-align: center;
+}
+
+.garant-foot__block-title-head {
+    width: 1367px;
+    height: 68px;
+    color:rgba(239, 239, 239, 1);
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    padding-bottom: 94px;
+}
+
+.garant-foot__block-btn {
+    margin: 0 0 139px 515px;
+} 
+
+.garant-foot__block-btn {  
+    width: 390px;
+    height: 70px; 
+    text-align: center;
+    padding: 25px 0 0 0;
+    background: #EA4C14;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.garant-foot__block-btn:hover {
+    background-color: #9B9B9B;
+    color: #EA4C14;
+    transition: 1s;
+    font-size: 22px;
+    width: 410px;
+    height: 75px;
+}
+
+.hr-red {
+    width: 100%;
+    height: 3px;
+    background-color: #EA4C14;
+}
+
+footer {
+    background-color: #070707;       
+}
+.bimpro {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 107px 0 0 0;
+}
+/* .bimpro-works {
+    display: flex;
+} */
+
+.bimpro-block__logotype {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 0 66px 0;
+}
+
+ul, li.foot-color {
+    color: #EFEFEF;
+    padding-right: 30px;
+    font-size: 18px;
+    transition: all 1s ease-in-out;
+}
+
+ul, li.foot-colors {
+    color: #EFEFEF;
+    padding-left: 30px;
+    font-size: 18px;
+    transition: all 1s ease-in-out;
+}
+
+.projects {
+    color: #EFEFEF;
+    font-size: 18px;
+}
+
+ul, li.foot-color:hover {
+    color: #EA4C14;
+    font-size: 22px;
+    transition: all 1s ease-in-out;
+}
+
+ul, li.foot-colors:hover {
+    color: #EA4C14;
+    font-size: 22px;
+    transition: all 1s ease-in-out;
+}
+
+ul, li.projects:hover {
+    color: #EA4C14;
+    font-size: 22px;
+    transition: all 1s ease-in-out;
+}
+
+.bimpro-works {
+    margin-left: -97px;    
+}
+
+.bimpro-works__text {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    /* margin: 0 auto; */
+}
+
+.bimpro-works__text-text {
+    width: 459px;
+    height: 204px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-bottom: -100px;
+}
+
+.visual-descript__title {
+    color: #EFEFEF;
+}
+
+.projects-color {
+    transition: all 1s ease-in-out;    
+}
+
+.projects-color:hover {
+    color: #EFEFEF;
+    font-size: 22px;
+    transition: all 1s ease-in-out;
+}
+
+.bimpro-adress {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.bimpro-adress__index {
+    width: 350px;
+    height: 27px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+}
+
+.bimpro-adress__phone-list {
+    list-style: none;
+    color: #EFEFEF;
+    padding: 0 0 30px 155px;
+}
+
+.bimpro-adress__police {
+    color: #EA4C14;
+    font-size: 20px;
+}
+
+.protectionof-rights {
+    min-width: 1386px;
+    margin: auto;
+    padding: 40px 0 20px 0;
+    width: 429px;
+    height: 27px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -30px;
+}
+
+
+
+

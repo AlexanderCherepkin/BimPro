@@ -38,7 +38,7 @@
 
 .owl-theme .owl-dots .owl-dot {
    display: inline-block;
-   zoom: 1
+   transform: scale(1.5);
 }
 
 .owl-theme .owl-dots .owl-dot span {
